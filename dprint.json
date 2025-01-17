@@ -1,0 +1,13 @@
+{
+  "extends": "../../../dprint.json",
+  "excludes": [
+    "**/node_modules",
+    "**/*-lock.json"
+  ],
+  "includes": [
+    "lib/*/{ts,js,json}",
+    "lib/**/*.{ts,js,json}",
+    "tests/**/*.{ts,js,json}",
+    "./*.{ts,js,mjs,cjs,json,md}"
+  ]
+}

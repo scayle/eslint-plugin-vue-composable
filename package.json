@@ -1,0 +1,55 @@
+{
+  "name": "@scayle/eslint-plugin-vue-composable",
+  "version": "0.2.1",
+  "description": "Rules to avoid unpleasant composable problems",
+  "author": "SCAYLE Commerce Engine",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "keywords": [
+    "eslint",
+    "eslintplugin",
+    "eslint-plugin"
+  ],
+  "main": "./lib/index.js",
+  "exports": "./lib/index.js",
+  "files": [
+    "CHANGELOG.md",
+    "lib",
+    "docs",
+    "LICENSE",
+    "THIRD_PARTY_LICENSE"
+  ],
+  "scripts": {
+    "lint": "eslint .",
+    "test": "mocha tests --recursive",
+    "update:eslint-docs": "eslint-doc-generator",
+    "format": "dprint check",
+    "format:fix": "dprint fmt",
+    "typecheck": "yarn tsc"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "3.2.0",
+    "@eslint/js": "9.18.0",
+    "@types/eslint": "9.6.1",
+    "dprint": "0.48.0",
+    "eslint": "9.18.0",
+    "eslint-doc-generator": "2.0.2",
+    "eslint-plugin-eslint-plugin": "6.4.0",
+    "eslint-plugin-n": "17.15.1",
+    "globals": "15.14.0",
+    "mocha": "11.0.1",
+    "typescript": "5.7.3"
+  },
+  "engines": {
+    "node": ">= 20.0.0"
+  },
+  "peerDependencies": {
+    "eslint": ">=7"
+  },
+  "volta": {
+    "node": "22.13.0"
+  }
+}
