@@ -40,7 +40,7 @@
     "eslint-plugin-eslint-plugin": "6.4.0",
     "eslint-plugin-n": "17.15.1",
     "globals": "15.14.0",
-    "mocha": "11.0.1",
+    "mocha": "11.1.0",
     "typescript": "5.7.3"
   },
   "engines": {
