@@ -31,11 +31,11 @@
     "typecheck": "yarn tsc"
   },
   "devDependencies": {
-    "@eslint/eslintrc": "3.2.0",
-    "@eslint/js": "9.20.0",
+    "@eslint/eslintrc": "3.3.0",
+    "@eslint/js": "9.21.0",
     "@types/eslint": "9.6.1",
     "dprint": "0.49.0",
-    "eslint": "9.20.1",
+    "eslint": "9.21.0",
     "eslint-doc-generator": "2.0.2",
     "eslint-plugin-eslint-plugin": "6.4.0",
     "eslint-plugin-n": "17.15.1",
