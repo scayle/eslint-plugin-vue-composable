@@ -8,10 +8,14 @@
     "access": "public",
     "registry": "https://registry.npmjs.org/"
   },
+  "repository": {
+    "url": "git+https://github.com/scayle/eslint-plugin-vue-composable.git"
+  },
   "keywords": [
     "eslint",
     "eslintplugin",
-    "eslint-plugin"
+    "eslint-plugin",
+    "vue"
   ],
   "main": "./lib/index.js",
   "exports": "./lib/index.js",
