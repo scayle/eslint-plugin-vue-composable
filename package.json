@@ -28,6 +28,7 @@
   ],
   "scripts": {
     "lint": "eslint .",
+    "lint:ci": "eslint . --format gitlab",
     "test": "mocha tests --recursive",
     "update:eslint-docs": "eslint-doc-generator",
     "format": "dprint check",
