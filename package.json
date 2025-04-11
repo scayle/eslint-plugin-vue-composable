@@ -33,7 +33,7 @@
     "update:eslint-docs": "eslint-doc-generator",
     "format": "dprint check",
     "format:fix": "dprint fmt",
-    "typecheck": "yarn tsc"
+    "typecheck": "tsc"
   },
   "devDependencies": {
     "@eslint/eslintrc": "3.3.1",
