@@ -39,7 +39,7 @@
     "@eslint/eslintrc": "3.3.1",
     "@eslint/js": "9.28.0",
     "@types/eslint": "9.6.1",
-    "@types/estree": "1.0.7",
+    "@types/estree": "1.0.8",
     "dprint": "0.50.0",
     "eslint-doc-generator": "2.1.2",
     "eslint-plugin-eslint-plugin": "6.4.0",
