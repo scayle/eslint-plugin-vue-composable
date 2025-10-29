@@ -1,5 +1,11 @@
 # @scayle/eslint-plugin-vue-composable
 
+## 0.2.2
+
+### Patch Changes
+
+- Cleaned up README.md and added CONTRIBUTING.md. No functional changes.
+
 ## 0.2.1
 
 ### Patch Changes
