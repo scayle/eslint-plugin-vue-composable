@@ -1,5 +1,11 @@
 # @scayle/eslint-plugin-vue-composable
 
+## 0.2.3
+
+### Patch Changes
+
+- This is an internal change only. The packages now use the PNPM catalog feature to ensure dependencies use the identical version across packages.
+
 ## 0.2.2
 
 ### Patch Changes
