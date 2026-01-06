@@ -42,7 +42,7 @@
     "@types/estree": "1.0.8",
     "dprint": "catalog:",
     "eslint-doc-generator": "3.0.2",
-    "eslint-plugin-eslint-plugin": "7.2.0",
+    "eslint-plugin-eslint-plugin": "7.3.0",
     "eslint-plugin-n": "17.23.1",
     "eslint": "catalog:",
     "globals": "17.0.0",
