@@ -43,7 +43,7 @@
     "dprint": "catalog:",
     "eslint-doc-generator": "3.0.2",
     "eslint-plugin-eslint-plugin": "7.3.0",
-    "eslint-plugin-n": "17.23.1",
+    "eslint-plugin-n": "17.23.2",
     "eslint": "catalog:",
     "globals": "17.0.0",
     "mocha": "11.7.5",
