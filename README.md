@@ -67,27 +67,24 @@ npm install --save-dev eslint @scayle/eslint-plugin-vue-composable
 
 ## Usage
 
-Add `@scayle/eslint-plugin-vue-composable` to the plugins section of your `.eslintrc` configuration file.
+Use the plugin with ESLint flat config (e.g. `eslint.config.mjs`). Import the plugin and add it to your config:
 
-```json
-{
-  "plugins": [
-    "@scayle/vue-composable"
-  ]
-}
-```
+```js
+import vueComposable from '@scayle/eslint-plugin-vue-composable'
 
-Then configure the rules you want to use under the rules section.
-
-```json
-{
-  "rules": {
-    "@scayle/vue-composable/no-composable-after-await": "warn",
-    "@scayle/vue-composable/no-lifecycle-after-await": "error",
-    "@scayle/vue-composable/no-watch-after-await": "error",
-    "@scayle/vue-composable/no-computed-after-await": "error"
-  }
-}
+export default [
+  {
+    plugins: {
+      '@scayle/vue-composable': vueComposable,
+    },
+    rules: {
+      '@scayle/vue-composable/no-composable-after-await': 'warn',
+      '@scayle/vue-composable/no-lifecycle-after-await': 'error',
+      '@scayle/vue-composable/no-watch-after-await': 'error',
+      '@scayle/vue-composable/no-computed-after-await': 'error',
+    },
+  },
+]
 ```
 
 ## Rules

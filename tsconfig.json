@@ -4,7 +4,9 @@
     "checkJs": true,
     "noEmit": true,
     "skipLibCheck": true,
-    "erasableSyntaxOnly": true
+    "erasableSyntaxOnly": true,
+    "module": "NodeNext",
+    "resolveJsonModule": true
   },
-  "include": ["lib/**/*.js"]
+  "include": ["lib/**/*.mjs"]
 }

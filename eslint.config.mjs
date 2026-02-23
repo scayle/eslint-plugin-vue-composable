@@ -1,24 +1,12 @@
 import globals from 'globals'
-import path from 'node:path'
-import { fileURLToPath } from 'node:url'
 import js from '@eslint/js'
-import { FlatCompat } from '@eslint/eslintrc'
+import n from 'eslint-plugin-n'
 import eslintPlugin from 'eslint-plugin-eslint-plugin'
-
-const __filename = fileURLToPath(import.meta.url)
-const __dirname = path.dirname(__filename)
-const compat = new FlatCompat({
-  baseDirectory: __dirname,
-  recommendedConfig: js.configs.recommended,
-  allConfig: js.configs.all,
-})
 
 export default [
   eslintPlugin.configs.recommended,
-  ...compat.extends(
-    'eslint:recommended',
-    'plugin:n/recommended',
-  ),
+  js.configs.recommended,
+  n.configs['flat/recommended-module'],
   {
     languageOptions: {
       globals: {
@@ -28,13 +16,14 @@ export default [
     },
   },
   {
-    files: ['lib/**/*.js'],
+    files: ['lib/**/*.mjs'],
     languageOptions: {
-      sourceType: 'commonjs',
+      sourceType: 'module',
+      ecmaVersion: 'latest',
     },
   },
   {
-    files: ['tests/**/*.js'],
+    files: ['tests/**/*.mjs'],
     languageOptions: {
       globals: {
         ...globals.mocha,

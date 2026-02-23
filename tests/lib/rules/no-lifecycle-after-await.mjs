@@ -1,5 +1,5 @@
-const rule = require('../../../lib/rules/no-lifecycle-after-await')
-const { RuleTester } = require('eslint')
+import rule from '../../../lib/rules/no-lifecycle-after-await.mjs'
+import { RuleTester } from 'eslint'
 
 const ruleTester = new RuleTester({ languageOptions: { ecmaVersion: 2020 } })
 ruleTester.run('no-lifecycle-after-await', rule, {

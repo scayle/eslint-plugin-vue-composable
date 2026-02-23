@@ -17,8 +17,8 @@
     "eslint-plugin",
     "vue"
   ],
-  "main": "./lib/index.js",
-  "exports": "./lib/index.js",
+  "main": "./lib/index.mjs",
+  "exports": "./lib/index.mjs",
   "files": [
     "CHANGELOG.md",
     "lib",
@@ -36,9 +36,7 @@
     "typecheck": "tsc"
   },
   "devDependencies": {
-    "@eslint/eslintrc": "3.3.3",
-    "@eslint/js": "9.39.2",
-    "@types/eslint": "9.6.1",
+    "@eslint/js": "10.0.1",
     "@types/estree": "1.0.8",
     "dprint": "catalog:",
     "eslint-doc-generator": "3.1.0",
@@ -50,9 +48,9 @@
     "typescript": "catalog:"
   },
   "engines": {
-    "node": ">= 20.0.0"
+    "node": ">= 22.0.0"
   },
   "peerDependencies": {
-    "eslint": ">=7"
+    "eslint": ">=10"
   }
 }

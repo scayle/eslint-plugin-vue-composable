@@ -1,5 +1,5 @@
-const rule = require('../../../lib/rules/no-composable-after-await')
-const { RuleTester } = require('eslint')
+import rule from '../../../lib/rules/no-composable-after-await.mjs'
+import { RuleTester } from 'eslint'
 
 const ruleTester = new RuleTester({ languageOptions: { ecmaVersion: 2020 } })
 ruleTester.run('no-composable-after-await', rule, {
