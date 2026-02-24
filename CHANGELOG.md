@@ -1,5 +1,49 @@
 # @scayle/eslint-plugin-vue-composable
 
+## 1.0.0
+
+### Major Changes
+
+- Upgraded the plugin to ESLint v10, ESM (`.mjs`), and flat config only. The package now exports a single ESM entry (`lib/index.mjs`) and no longer supports CommonJS or legacy eslintrc.
+
+  - Requires ESLint `>=10` and flat config (`eslint.config.js` / `eslint.config.mjs`).
+  - Plugin must be used via direct import and the object plugin form; `FlatCompat` and string plugin names are no longer supported.
+
+  Consumers using `compat.config({ plugins: ['@scayle/vue-composable'], rules: ... })` must switch to direct import and object plugin. Example:
+
+  - Before:
+
+    ```js
+    import { FlatCompat } from '@eslint/eslintrc'
+    const compat = new FlatCompat()
+    // ...
+    ...compat.config({
+      plugins: ['@scayle/vue-composable'],
+      rules: {
+        '@scayle/vue-composable/no-composable-after-await': 'error',
+        '@scayle/vue-composable/no-lifecycle-after-await': 'error',
+        '@scayle/vue-composable/no-watch-after-await': 'error',
+        '@scayle/vue-composable/no-computed-after-await': 'error',
+      },
+    })
+    ```
+
+  - After:
+
+    ```js
+    import vueComposable from '@scayle/eslint-plugin-vue-composable'
+    // ...
+    {
+      plugins: { '@scayle/vue-composable': vueComposable },
+      rules: {
+        '@scayle/vue-composable/no-composable-after-await': 'error',
+        '@scayle/vue-composable/no-lifecycle-after-await': 'error',
+        '@scayle/vue-composable/no-watch-after-await': 'error',
+        '@scayle/vue-composable/no-computed-after-await': 'error',
+      },
+    }
+    ```
+
 ## 0.2.3
 
 ### Patch Changes
