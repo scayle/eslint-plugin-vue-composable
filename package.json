@@ -43,7 +43,7 @@
     "eslint-plugin-eslint-plugin": "7.3.2",
     "eslint-plugin-n": "17.24.0",
     "eslint": "catalog:",
-    "globals": "17.3.0",
+    "globals": "17.4.0",
     "mocha": "11.7.5",
     "typescript": "catalog:"
   },
